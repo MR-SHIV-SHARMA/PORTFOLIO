@@ -533,3 +533,4 @@ Full-Stack Web Developer (Freelance)
 
 
 
+// "build": "vite build",
