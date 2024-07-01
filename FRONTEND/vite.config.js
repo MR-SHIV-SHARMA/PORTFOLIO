@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://backend-theta-taupe.vercel.app",
+        target: "http://localhost:8000",
       },
     },
   },
