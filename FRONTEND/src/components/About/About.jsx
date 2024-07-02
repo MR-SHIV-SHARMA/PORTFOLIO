@@ -6,7 +6,7 @@ function App() {
       <main className="flex-grow p-4 mt-16">
         <section className="text-center max-w-4xl mx-auto">
           <img
-            src="../../../public/images/1704988810024.jpg"
+            src="/images/1704988810024.jpg"
             alt="Your Photo"
             className="profile-photo mx-auto rounded-full w-32 h-32 sm:w-48 sm:h-48 object-cover mb-4"
           />
