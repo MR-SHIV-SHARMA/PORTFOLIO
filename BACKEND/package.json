@@ -5,16 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
-    "start": "node src/index.js",
-    "vercel-build": "tsc --project tsconfig.json && mkdir -p dist && cp -r path/to/built/files/* dist"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.0",
-    "prettier": "^3.2.5",
-    "typescript": "^4.5.0"
+    "prettier": "^3.2.5"
   },
   "dependencies": {
     "axios": "^1.7.2",
