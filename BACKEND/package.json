@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "start": "node src/index.js",
-    "vercel-build": "tsc -p . && mkdir -p dist && cp -r path/to/built/files/* dist"
+    "vercel-build": "tsc --project tsconfig.json && mkdir -p dist && cp -r path/to/built/files/* dist"
   },
   "author": "",
   "license": "ISC",

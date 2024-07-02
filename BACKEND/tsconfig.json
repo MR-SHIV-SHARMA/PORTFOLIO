@@ -1,25 +1,24 @@
-// tsconfig.json
 {
     "compilerOptions": {
-      "target": "ESNext",          // Specify your target ECMAScript version
-      "module": "commonjs",        // Specify module code generation
-      "outDir": "./dist",          // Output directory for compiled files
-      "strict": true,              // Enable all strict type-checking options
-      "esModuleInterop": true,     // Enables emit interoperability between CommonJS and ES Modules
-      "skipLibCheck": true,        // Skip type checking of declaration files
-      "forceConsistentCasingInFileNames": true,  // Ensure consistency in file casing
-      "moduleResolution": "node",  // Specify module resolution strategy: 'node' (Node.js) or 'classic'
-      "resolveJsonModule": true,   // Allow importing of JSON modules
-      "baseUrl": "./",             // Base directory to resolve non-relative module names
+      "target": "ESNext",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "baseUrl": "./",
       "paths": {
-        "*": ["./node_modules/*"]  // Path mapping for module resolution
+        "*": ["./node_modules/*"]
       }
     },
     "include": [
-      "src/**/*.ts"               // Specify the files to include in compilation
+      "src/**/*.ts"  // Ensure this path matches your actual TypeScript file location
     ],
     "exclude": [
-      "node_modules"              // Specify the files to exclude from compilation
+      "node_modules"
     ]
   }
   
