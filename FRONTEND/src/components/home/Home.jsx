@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-700 min-h-screen w-full">
       <img
-        src="/src/components/home/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg"
+        src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg"
         alt=""
         className="absolute inset-0 -z-10 min-h-screen w-full object-cover object-center"
       />

@@ -13,7 +13,7 @@ function ProfileCard() {
       <div className="relative w-40 h-40 md:w-56 md:h-56 mt-4">
         <img
           className="rounded-full object-cover w-full h-full"
-          src="/src/components/Profile/1704988810024.jpg"
+          src="/images/1704988810024.jpg"
           alt="profile-picture"
         />
       </div>

@@ -29,14 +29,14 @@ function Projects() {
   const projectData = [
     {
       title: "Music accedmy",
-      thumbnail: "/src/components/Projects/pexels-cottonbro-5081386.jpg",
+      thumbnail: "/images/pexels-cottonbro-5081386.jpg",
       description:
         "Our music academy enriches music education by offering a versatile learning experience. We prepare students to achieve their musical aspirations through interactive dialogues, extensive music collections, and advanced study materials.",
       link: "https://shiv-vibes.vercel.app",
     },
     {
       title: "E-Commerce",
-      thumbnail: "/src/components/Projects/header2.jpg",
+      thumbnail: "/images/header2.jpg",
       description:
         "Our e-commerce platform offers a diverse range of top-brand products, ensuring a convenient shopping experience with secure transactions and excellent customer service.",
       link: "project2-details.html",
