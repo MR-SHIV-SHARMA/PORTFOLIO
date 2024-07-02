@@ -32,12 +32,12 @@ const contect = asyncHandler(async (req, res) => {
   const createdcontect = await Contect.findById(contect._id).select("");
 
   if (!createdcontect) {
-    throw new ApiError(500, "Something went wrong while registering the user");
+    throw new ApiError(500, "Something went wrong while sending the message");
   }
 
   return res
     .status(201)
-    .json(new ApiResponse(200, createdcontect, "User registered Successfully"));
+    .json(new ApiResponse(200, createdcontect, "User send message Successfully"));
 });
 
 export { contect };
