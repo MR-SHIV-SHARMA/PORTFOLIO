@@ -58,7 +58,7 @@ function Contact() {
     }
 
     try {
-      const response = await axios.post("/api/v1/users/register", formData); // Send POST request to backend
+      const response = await axios.post("/api/v1/user/contect", formData); // Send POST request to backend
       console.log("Contact form submitted:", response.data);
       setSuccessMessage("Message sent successfully!"); // Show success message
       setErrorMessage(""); // Clear any previous error messages
