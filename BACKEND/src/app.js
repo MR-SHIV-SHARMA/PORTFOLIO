@@ -18,6 +18,6 @@ app.use(cookieParser());
 
 import contectRouter from "./routes/contect.routes.js";
 
-app.use("/api/v1/user", contectRouter);
+app.use("/api/v1/users", contectRouter);
 
 export { app };
