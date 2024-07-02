@@ -534,3 +534,6 @@ Full-Stack Web Developer (Freelance)
 
 
 // "build": "vite build",
+
+
+        // target: 'https://shivs-io.vercel.app',
