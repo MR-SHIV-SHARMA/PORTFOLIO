@@ -5,9 +5,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://shivs-io.vercel.app/',
-        // changeOrigin: true,
-        // rewrite: (path) => path.replace(/^\/api/, ''),
+        target: 'https://shivs-io.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
