@@ -3,8 +3,8 @@ import { contect } from "../controllers/contect.controllers.js";
 
 const router = Router();
 
-router.route("/contect").post(contect);
-router.get('/contect', (req, res) => {
+router.route("/contact").post(contect);
+router.get('/contact', (req, res) => {
     res.json({ message: 'Welcome to the contect Page!' });
 });
 

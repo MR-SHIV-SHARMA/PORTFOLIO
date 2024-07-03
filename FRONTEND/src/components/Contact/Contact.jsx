@@ -58,10 +58,10 @@ function Contact() {
     }
 
     try {
-      const response = await axios.post("/api/v1/users/contect", formData); // Send POST request to backend
+      const response = await axios.post("/api/v1/users/contact", formData);
       console.log("Contact form submitted:", response.data);
-      setSuccessMessage("Message sent successfully!"); // Show success message
-      setErrorMessage(""); // Clear any previous error messages
+      setSuccessMessage("Message sent successfully!");
+      setErrorMessage("");
       setFormData({
         firstName: "",
         lastName: "",
@@ -70,13 +70,11 @@ function Contact() {
         phoneNumber: "",
         message: "",
         policy: false,
-      }); // Reset form fields
+      });
     } catch (error) {
       console.error("Error submitting contact form:", error);
-      setSuccessMessage(""); // Clear any previous success messages
-      setErrorMessage(
-        "Failed to send the message. You sent the message one time."
-      ); // Show error message
+      setSuccessMessage("");
+      setErrorMessage("Failed to send the message. You sent the message one time.");
     }
   };
 
