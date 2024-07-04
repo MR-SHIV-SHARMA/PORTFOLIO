@@ -1,9 +1,9 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
-import { Contect } from "../models/contect.models.js";
+import { Contact } from "../models/contact.models.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 
-const contect = asyncHandler(async (req, res) => {
+const contact = asyncHandler(async (req, res) => {
   const { firstName, lastName, email, company, phoneNumber, message, policy } =
     req.body;
 
@@ -19,7 +19,7 @@ const contect = asyncHandler(async (req, res) => {
     throw new ApiError(400, "All fields are required");
   }
 
-  const contect = await Contect.create({
+  const contact = await Contact.create({
     firstName,
     email,
     lastName,
@@ -29,15 +29,15 @@ const contect = asyncHandler(async (req, res) => {
     policy,
   });
 
-  const createdcontect = await Contect.findById(contect._id).select("");
+  const createdcontact = await Contact.findById(contact._id).select("");
 
-  if (!createdcontect) {
+  if (!createdcontact) {
     throw new ApiError(500, "Something went wrong while sending the message");
   }
 
   return res
     .status(201)
-    .json(new ApiResponse(200, createdcontect, "User send message Successfully"));
+    .json(new ApiResponse(200, createdcontact, "User send message Successfully"));
 });
 
-export { contect };
+export { contact };

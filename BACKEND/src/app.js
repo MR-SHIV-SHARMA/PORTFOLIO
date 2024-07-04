@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 app.use(cookieParser());
 
-import contectRouter from "./routes/contect.routes.js";
+import contactRouter from "./routes/contact.routes.js";
 
-app.use("/api/v1/users", contectRouter);
+app.use("/api/v1/users", contactRouter);
 
 export { app };
