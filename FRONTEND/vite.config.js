@@ -27,7 +27,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://shivs-io.vercel.app",
+        target: "https://shivs-io.vercel.app/",
         // changeOrigin: true,  // Ensure the origin of the host header is changed to the target URL
         // secure: false,       // Disable SSL verification if needed (not recommended for production)
         // rewrite: (path) => path.replace(/^\/api/, ''), // Optional: Remove /api prefix if not needed by the backend
