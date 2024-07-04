@@ -58,21 +58,21 @@ function Contact() {
     }
 
     try {
-      const response = await axios.post("/api/contact", formData);
+      const response = await axios.post("https://shivs-io.vercel.app/api/contact", formData);
       console.log("Contact form submitted:", response.data);
       setSuccessMessage("Message sent successfully!");
       setErrorMessage("");
       setFormData({
-        firstName: "john",
-        lastName: "lorem",
-        company: "jhonpvt",
-        email: "john@gmail.com",
-        phoneNumber: "9922884466",
-        message: "hey man",
-        policy: true,
+        firstName: "",
+        lastName: "",
+        company: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        policy: false,
       });
     } catch (error) {
-      console.error("Error submitting contact form:", error);
+      console.error("Error submitting contact form backend:", error);
       setSuccessMessage("");
       setErrorMessage("Failed to send the message. You sent the message one time.");
     }
