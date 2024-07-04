@@ -63,13 +63,13 @@ function Contact() {
       setSuccessMessage("Message sent successfully!");
       setErrorMessage("");
       setFormData({
-        firstName: "",
-        lastName: "",
-        company: "",
-        email: "",
-        phoneNumber: "",
-        message: "",
-        policy: false,
+        firstName: "john",
+        lastName: "lorem",
+        company: "jhonpvt",
+        email: "john@gmail.com",
+        phoneNumber: "9922884466",
+        message: "hey man",
+        policy: true,
       });
     } catch (error) {
       console.error("Error submitting contact form:", error);
