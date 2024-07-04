@@ -18,6 +18,6 @@ app.use(cookieParser());
 
 import contactRouter from "./routes/contact.routes.js";
 
-app.use("/api/v1/users", contactRouter);
+app.use("/api", contactRouter);
 
 export { app };

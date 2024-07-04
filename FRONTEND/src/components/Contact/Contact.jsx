@@ -58,7 +58,7 @@ function Contact() {
     }
 
     try {
-      const response = await axios.post("/api/v1/users/contact", formData);
+      const response = await axios.post("/api/contact", formData);
       console.log("Contact form submitted:", response.data);
       setSuccessMessage("Message sent successfully!");
       setErrorMessage("");
