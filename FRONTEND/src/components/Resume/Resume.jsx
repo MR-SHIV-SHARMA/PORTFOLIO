@@ -44,6 +44,16 @@ function Resume() {
                 Portfolio
               </a>
             </p>
+            <p>
+              <a
+                href="https://shiv-vibes.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                Project
+              </a>
+            </p>
 
             <h2 className="text-lg font-semibold mt-4">PROFESSIONAL SUMMARY</h2>
             <p>
