@@ -9,6 +9,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact/Contact.jsx";
 import ProfileCard from "./components/Profile/ProfileCard.jsx";
 import Projects from "./components/Projects/Projects.jsx";
+// import Projects1 from "./components/Projects1/Projects1.jsx";
 import Resume from "./components/Resume/Resume.jsx";
 
 const router = createBrowserRouter([
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
         path: "projets",
         element: <Projects />,
       },
+
+      // {
+      //   path: "projets1",
+      //   element: <Projects1 />,
+      // },
+
       {
         path: "resume",
         element: <Resume />,

@@ -58,7 +58,10 @@ function Contact() {
     }
 
     try {
-      const response = await axios.post("https://shivs-io.vercel.app/api/contact", formData);
+      const response = await axios.post(
+        "https://shivs-io.vercel.app/api/contact",
+        formData
+      );
       console.log("Contact form submitted:", response.data);
       setSuccessMessage("Message sent successfully!");
       setErrorMessage("");
@@ -74,7 +77,7 @@ function Contact() {
     } catch (error) {
       console.error("Error submitting contact form backend:", error);
       setSuccessMessage("");
-      setErrorMessage("Failed to send the message. You sent the message one time.");
+      setErrorMessage("Failed to send the message. Please try again later.");
     }
   };
 
@@ -251,27 +254,29 @@ function Contact() {
                 {successMessage}
               </p>
             )}
-            <h1 className="mt-10 text-2xl font-bold text-gray-900">
+            {/* <h1 className="mt-6 text-2xl font-bold text-gray-900">
               Connect with me
             </h1>
             <div className="mt-4 grid grid-cols-2 gap-4">
               <ul className="list-none space-y-2">
                 <li className="text-lg font-medium text-indigo-600 hover:underline">
-                  <a href="#">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/">
+                    LinkedIn
+                  </a>
                 </li>
                 <li className="text-lg font-medium text-indigo-600 hover:underline">
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/MR-SHIV-SHARMA">GitHub</a>
                 </li>
               </ul>
               <ul className="list-none space-y-2">
                 <li className="text-lg font-medium text-indigo-600 hover:underline">
-                  <a href="#">About Me</a>
+                  <a href="/about">About Me</a>
                 </li>
                 <li className="text-lg font-medium text-indigo-600 hover:underline">
-                  <a href="#">Projects</a>
+                  <a href="/projets">Projects</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import circleplay from "/src/components/home/play-circle.png";
+import icons1 from "/src/components/home/icons1.png";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <img
         src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg"
         alt=""
-        className="absolute inset-0 -z-10 min-h-screen w-full object-cover object-center"
+        className="absolute inset-0 -z-10 sm:min-h-screen h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>{" "}
       {/* Add this line for the black overlay */}
@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex flex-col-reverse">
               <dd className="text-2xl font-bold ">
                 <NavLink
-                  className="bg-gray-600 text-white p-2 px-4 rounded-full "
+                  className="border-4 text-white p-2 px-4 rounded-full "
                   to="/Contact"
                 >
                   Contact
@@ -46,13 +46,14 @@ export default function Home() {
             <div className="flex flex-col-reverse">
               <dd className="text-2xl font-bold ">
                 <NavLink className=" flex " to="/About">
-                  <p className="bg-gray-600 text-white p-2 px-4 hidden sm:block rounded-full">
+                  <p className="border-4 text-white p-2 px-4 hidden sm:block rounded-full">
                     Start Tour
                   </p>
                   <img
-                    src={circleplay}
+                    // src={circleplay}
+                    src={icons1}
                     alt="Project Icon"
-                    className="w-12 h-12 ml-2"
+                    className="w-14 h-14 ml-2 text-white border-4 rounded-full"
                   />
                 </NavLink>
               </dd>

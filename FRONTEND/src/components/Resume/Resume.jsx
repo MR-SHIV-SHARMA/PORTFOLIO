@@ -7,9 +7,9 @@ function Resume() {
   return (
     <div className="bg-gray-500 min-h-screen flex flex-col items-center">
       <div className="pt-10"></div>
-      <div className="mt-10 w-full flex justify-center">
-        <div className="w-full max-w-4xl border-2 border-white">
-          <div className="bg-white p-6">
+      <div className="mt-10 w-full mb-4 sm:px-4 flex justify-center">
+        <div className="w-full max-w-8xl border-2 border-white">
+          <div className="bg-white p-2 sm:p-6">
             <div className="flex justify-between items-center">
               <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1>
               <a
@@ -20,9 +20,9 @@ function Resume() {
                 <FiDownload size={24} />
               </a>
             </div>
-            <div className="flex  gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
               <p>+91 6377930902 </p>
-              <p>|</p>
+              <p className="hidden sm:block">|</p>
               <p>
                 <a
                   href="https://github.com/MR-SHIV-SHARMA"
@@ -33,7 +33,7 @@ function Resume() {
                   Github
                 </a>
               </p>
-              <p>|</p>
+              <p className="hidden sm:block">|</p>
               <p>
                 <a
                   href="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/"
@@ -44,7 +44,7 @@ function Resume() {
                   LinkedIn
                 </a>
               </p>
-              <p>|</p>
+              <p className="hidden sm:block">|</p>
               <p>
                 <a
                   href="https://shiv-vibes.vercel.app/"
@@ -55,7 +55,7 @@ function Resume() {
                   Project
                 </a>
               </p>
-              <p>|</p>
+              <p className="hidden sm:block">|</p>
               <p>
                 <a
                   href="https://x.com/Shiv_Sharma_786"

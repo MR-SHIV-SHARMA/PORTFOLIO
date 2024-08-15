@@ -2,13 +2,16 @@ import mongoose, { Schema } from "mongoose";
 
 const contactSchema = new Schema(
   {
+    firstName: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     lastName: {
       type: String,
       required: true,
-      unique: true,
       lowercase: true,
       trim: true,
-      index: true,
     },
     email: {
       type: String,
@@ -16,12 +19,6 @@ const contactSchema = new Schema(
       unique: true,
       lowercase: true,
       trim: true,
-    },
-    firstName: {
-      type: String,
-      required: true,
-      trim: true,
-      index: true,
     },
     company: {
       type: String,

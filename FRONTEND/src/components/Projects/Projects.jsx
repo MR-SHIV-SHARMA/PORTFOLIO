@@ -1,23 +1,22 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function Project({ title, thumbnail, description, link }) {
   return (
-    <article className="border border-gray-300 p-4 m-4 w-full md:w-1/2 lg:w-1/3">
+    <article className="border border-gray-300 p-4 mt-4 sm:m-4 w-full md:w-1/1 lg:w-1/1">
       <h2 className="text-xl font-bold mb-2">{title}</h2>
-      <img
-        src={thumbnail}
-        alt={`${title} Thumbnail`}
-        className="w-full h-72 mb-2"
-      />
-      <p className="mb-4">{description}</p>
-      <Link to={link} className="text-blue-500 hover:underline">
-        More Details
+      <Link to={link}>
+        <img
+          src={thumbnail}
+          alt={`${title} Thumbnail`}
+          className="w-full h-72 lg:h-[453px] mb-2"
+        />
       </Link>
+      <p>{description}</p>
     </article>
   );
 }
-
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   thumbnail: PropTypes.string.isRequired,
@@ -25,11 +24,12 @@ Project.propTypes = {
   link: PropTypes.string.isRequired,
 };
 
-function Projects() {
+function Projects1() {
   const projectData = [
     {
       title: "Music accedmy",
-      thumbnail: "/images/pexels-cottonbro-5081386.jpg",
+      // thumbnail: "/images/pexels-cottonbro-5081386.jpg",
+      thumbnail: "/images/luca-bravo-9l_326FISzk-unsplash.jpg",
       description:
         "Our music academy enriches music education by offering a versatile learning experience. We prepare students to achieve their musical aspirations through interactive dialogues, extensive music collections, and advanced study materials.",
       link: "https://shiv-vibes.vercel.app",
@@ -58,18 +58,9 @@ function Projects() {
             />
           ))}
         </section>
-        <nav className="text-center">
-          <Link to="/About" className="text-blue-500 hover:underline mx-2">
-            About Me
-          </Link>{" "}
-          |
-          <Link to="/Contact" className="text-blue-500 hover:underline mx-2">
-            Contact Me
-          </Link>
-        </nav>
       </main>
     </div>
   );
 }
 
-export default Projects;
+export default Projects1;

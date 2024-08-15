@@ -1,19 +1,17 @@
-import { Link } from "react-router-dom";
-
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-600">
+    <div className="flex flex-col min-h-screen bg-white text-gray-950">
       <main className="flex-grow p-4 mt-16">
         <section className="text-center max-w-4xl mx-auto">
           <img
-            src="/images/1704988810024.jpg"
+            src="/images/WhatsApp-Image1.jpeg"
             alt="Your Photo"
-            className="profile-photo mx-auto rounded-full w-32 h-32 sm:w-48 sm:h-48 object-cover mb-4"
+            className="profile-photo mx-auto rounded-full border-8 w-32 h-32 sm:w-48 sm:h-48 object-cover mb-4"
           />
-          <h2 className="text-2xl font-bold mb-2 text-white">
+          <h2 className="text-2xl font-bold mb-2 text-gray-950">
             Shiv Prasad Sharma
           </h2>
-          <p className="text-lg leading-relaxed text-white">
+          <p className="text-lg leading-relaxed text-gray-950">
             Hello! I&apos;m Shiv Prasad Sharma, a passionate programmer
             specializing in web development. My career aspiration is to elevate
             my skills and knowledge to become a trailblazer in the technology
@@ -27,7 +25,7 @@ function App() {
         </section>
 
         <div className="sm:p-5">
-          <div className="mb-9 mt-5 text-white text-center text-3xl font-bold">
+          <div className="mb-9 mt-5 text-gray-950 text-center text-3xl font-bold">
             <h1 className="mb-3">Skills</h1>
             <h2 className="mb-3">
               ReactJS, Tailwind CSS, JavaScript, HTML, CSS, Next.js, Node.js,
@@ -35,7 +33,7 @@ function App() {
             </h2>
           </div>
 
-          <section className="mb-9 text-white">
+          <section className="mb-9 text-gray-950">
             <h3 className="text-xl font-bold mb-3">Projects</h3>
             <ul className="p-0 list-none">
               <li className="mb-5">
@@ -80,7 +78,7 @@ function App() {
             </ul>
           </section>
 
-          <section className="mb-9 text-white">
+          <section className="mb-9 text-gray-950">
             <h3 className="text-xl font-bold">Skills Highlight</h3>
             <div className="p-0">
               <h4 className="text-xl font-bold py-3">ReactJS</h4>
@@ -218,7 +216,7 @@ function App() {
             </div>
           </section>
 
-          <section className="mb-9 text-white">
+          <section className="text-gray-950">
             <h3 className="mb-3 font-bold text-xl">Contact Me</h3>
             <ul>
               <li className="m-0 p-0 list-none">
@@ -251,11 +249,11 @@ function App() {
             </ul>
           </section>
 
-          <div className="flex justify-center mt-4">
-            <button className="bg-gray-800 text-white py-4 px-6 rounded">
+          {/* <div className="flex justify-center mt-4">
+            <button className="bg-gray-300 text-gray-950 py-4 px-6 rounded">
               <nav>
                 <a
-                  href="https://shiv-vibes.vercel.app"
+                  href="/projets"
                   className="text-blue-500 hover:underline mx-2"
                 >
                   Projects
@@ -269,7 +267,7 @@ function App() {
                 </Link>
               </nav>
             </button>
-          </div>
+          </div> */}
         </div>
       </main>
     </div>

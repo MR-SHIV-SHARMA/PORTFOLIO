@@ -34,8 +34,8 @@ export default function Header() {
             <Link to="/ProfileCard">
               <img
                 alt="shiva"
-                src="/images/1704988810024.jpg"
-                className="relative inline-block object-cover object-center w-12 h-12 rounded-full cursor-pointer"
+                src="/images/shiva-tilak.png"
+                className="relative inline-block object-cover object-center w-12 h-12 rounded-full bg-black cursor-pointer"
                 data-popover-target="profile-menu"
               />
             </Link>
