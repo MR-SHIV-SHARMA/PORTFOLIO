@@ -19,7 +19,7 @@ function New_ProfileCard() {
                 Shiv Prasad Sharma
               </h2>
               {/* <p className="text-gray-900">CEO / Co-Founder</p> */}
-              <p className="text-gray-900">Jaipur,  Full Stack Developer</p>
+              <p className="text-gray-900">Jaipur, Full Stack Developer</p>
             </div>
             <hr className="border-t border-white w-28 my-8" />
           </div>
@@ -100,7 +100,7 @@ function New_ProfileCard() {
             <div className="flex text-gray-900 w-full items-end mt-5 mb-5 sm:mb-10 justify-end">
               <span className="text-lg font-semibold px-6 font-serif flex items-center">
                 <hr className="border-t border-black w-28 mr-2" />
-                Shiv Vibes
+                <Link to="https://shiv-vibes.vercel.app">Shiv Vibes</Link>
               </span>
             </div>
           </div>

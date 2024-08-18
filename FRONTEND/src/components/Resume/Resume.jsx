@@ -84,7 +84,7 @@ function Resume() {
                 TypeScript
               </li>
               <li>Backend: NodeJS, ExpressJS</li>
-              <li>Database: MongoDB</li>
+              <li>Database: MongoDB, Redis</li>
             </ul>
             <h2 className="text-lg font-semibold mt-4">PROJECTS</h2>
             <p className="mt-2">
@@ -101,19 +101,20 @@ function Resume() {
               </strong>
               <br />
               <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
-              Tailwind CSS, ReactJS, NextJS, NodeJS, MongoDB, TypeScript
+              Tailwind CSS, ReactJS, NextJS, NodeJS, MongoDB, TypeScript, Redis
               <br />
-              <span className="italic font-bold">Frontend:</span> Next.js and
-              React.js for server-side rendering and logic, TypeScript for type
-              checking, Tailwind CSS for responsive design, and React Hooks for
-              state management.
+              <span className="italic font-bold">Frontend:</span> Next.js for
+              server-side rendering and logic, TypeScript for type checking,
+              Tailwind CSS for responsive design, and React Hooks for state
+              management.
               <br />
               <span className="italic font-bold">Backend:</span> Next.js manages
               backend logic and API routes, Axios ensures smooth
               frontend-backend communication for HTTP requests.
               <br />
               <span className="italic font-bold">Database:</span> MongoDB with
-              Mongoose for structured schema and efficient data handling.
+              Mongoose for structured schema and efficient data handling, Redis
+              for caching and real-time data processing.
               <br />
               <span className="italic font-bold">Authentication:</span> JWT for
               secure user sessions and permissions, integrated with Next.js for

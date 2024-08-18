@@ -10,15 +10,10 @@ const contactSchema = new Schema(
     lastName: {
       type: String,
       required: true,
-      lowercase: true,
-      trim: true,
     },
     email: {
       type: String,
       required: true,
-      unique: true,
-      lowercase: true,
-      trim: true,
     },
     company: {
       type: String,
@@ -27,7 +22,6 @@ const contactSchema = new Schema(
     phoneNumber: {
       type: String,
       required: true,
-      unique: true,
       validate: {
         validator: function (v) {
           return /^\d{10}$/.test(v);

@@ -19,25 +19,32 @@ const contact = asyncHandler(async (req, res) => {
     throw new ApiError(400, "All fields are required");
   }
 
-  const contact = await Contact.create({
-    firstName,
-    email,
-    lastName,
-    company,
-    phoneNumber,
-    message,
-    policy,
-  });
+  let contact = await Contact.findOne({ email });
 
-  const createdcontact = await Contact.findById(contact._id).select("");
-
-  if (!createdcontact) {
-    throw new ApiError(500, "Something went wrong while sending the message");
+  if (contact) {
+    contact.firstName = firstName;
+    contact.lastName = lastName;
+    contact.company = company;
+    contact.phoneNumber = phoneNumber;
+    contact.message = message;
+    contact.policy = policy;
+  } else {
+    contact = new Contact({
+      firstName,
+      lastName,
+      email,
+      company,
+      phoneNumber,
+      message,
+      policy,
+    });
   }
+
+  await contact.save();
 
   return res
     .status(201)
-    .json(new ApiResponse(200, createdcontact, "User send message Successfully"));
+    .json(new ApiResponse(200, contact, "User sent message successfully"));
 });
 
 export { contact };
