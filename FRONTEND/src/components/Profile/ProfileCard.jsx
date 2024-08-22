@@ -8,11 +8,11 @@ function New_ProfileCard() {
     <div>
       <div className="flex items-center justify-center">
         <div className="w-full flex flex-col lg:flex-row">
-          <div className="flex flex-col bg-gray-700 items-center justify-center min-h-screen px-10 sm:px-16  pt-10 sm:pt-10 lg:mb-0">
+          <div className="flex flex-col bg-customBlue items-center justify-center sm:min-h-screen px-10 sm:px-16  pt-10 sm:pt-10 lg:mb-0">
             <img
               src="/images/WhatsApp-Image.jpeg"
               alt="Profile Photo"
-              className="object-cover mb-4 h-80 w-96 sm:h-96 sm:w-64"
+              className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64"
             />
             <div className="text-center">
               <h2 className="text-3xl font-serif font-bold text-black mb-2">
@@ -29,11 +29,11 @@ function New_ProfileCard() {
               <h3 className="text-4xl font-serif absolute text-gray-800 ml-5 sm:ml-10">
                 My Profile
               </h3>
-              <div className="space-y-1 mt-5 w-full text-white justify-center">
-                <div className=" bg-gradient-to-r pl-5 sm:pl-10 pt-10 from-purple-500 to-pink-500 flex flex-col items-start">
+              <div className="space-y-1 mt-5 w-full text-black justify-center">
+                <div className="bg-customBeige pl-5 sm:pl-10 pt-10 flex flex-col items-start">
                   <div className="grid grid-cols-1 items-center">
                     <span className="col-span-3 text-left font-sans overflow-hidden">
-                      <p className="font-sans text-white text-base antialiased font-medium leading-relaxed">
+                      <p className="font-sans text-base antialiased font-medium leading-relaxed">
                         I&apos;m a full-stack web developer and I work remotely
                         from Bharat
                       </p>
@@ -83,7 +83,7 @@ function New_ProfileCard() {
                       <p className="hidden md:block text-sm">Music</p>
                     </Link>
                     <Link
-                      to="#"
+                      to="https://shivs.vercel.app"
                       className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400 text-white"
                     >
                       <img

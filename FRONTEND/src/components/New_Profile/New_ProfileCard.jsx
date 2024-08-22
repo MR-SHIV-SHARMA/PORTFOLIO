@@ -3,9 +3,9 @@ import { SocialIcon } from "react-social-icons";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import projectIcon1 from "/src/components/Profile/icons8-project-64.png";
 import projectIcon2 from "/src/components/Profile/icons8-project-48.png";
-import projectIcon3 from "/src/components/Profile/icons8-project-50.png";
-import projectIcon4 from "/src/components/Profile/icons8-project-80.png";
-import projectIcon5 from "/src/components/Profile/icons8-project.gif";
+// import projectIcon3 from "/src/components/Profile/icons8-project-50.png";
+// import projectIcon4 from "/src/components/Profile/icons8-project-80.png";
+// import projectIcon5 from "/src/components/Profile/icons8-project.gif";
 
 function ProfileCard() {
   return (
@@ -65,7 +65,7 @@ function ProfileCard() {
           <p className="hidden md:block text-sm">Music</p>
         </Link>
         <Link
-          to="#"
+          to="https://shivs.vercel.app"
           className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400 text-white"
         >
           <img src={projectIcon2} alt="Project Icon" className="w-12 h-12" />
