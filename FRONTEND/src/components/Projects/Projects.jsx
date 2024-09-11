@@ -1,41 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 
 function Project({ title, thumbnail, description, link, subtitle }) {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => setIsClicked(false), 200); // Reset after animation duration
+  };
+
   return (
-    <article className="border border-gray-300 p-4 mt-4 sm:m-4 w-full md:w-1/1 lg:w-1/1 ">
-      <h2 className="text-xl font-bold mb-2">{title}</h2>
+    <article
+      className={`border border-gray-300 rounded-lg overflow-hidden shadow-lg mb-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition-transform transform ${
+        isClicked ? "scale-95 shadow-xl" : "hover:scale-105"
+      }`}
+      onClick={handleClick}
+    >
       <Link to={link}>
-        <div className="relative isolate overflow-hidden h-72 lg:h-[453px] mb-2">
+        <div className="relative overflow-hidden h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80">
           <img
             src={thumbnail}
             alt={`${title} Thumbnail`}
-            className="w-full h-72 lg:h-[453px] mb-2 absolute inset-0 -z-10"
+            className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
           />
-          <p className="text-white text-3xl font-extrabold p-5 flex justify-center w-full h-72 lg:h-[453px] items-center font-serif ">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold p-4">
             {subtitle}
-          </p>
-          <div className="absolute inset-0 -z-10 bg-black opacity-25"></div>
+          </div>
         </div>
       </Link>
-      <p>{description}</p>
+      <div className="p-6 bg-white">
+        <h2 className="text-xl font-semibold mb-3 text-gray-800">{title}</h2>
+        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          {description}
+        </p>
+      </div>
     </article>
   );
 }
-Project.propTypes = {
-  title: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-};
 
 function Projects1() {
   const projectData = [
     {
-      title: "Music accedmy",
-      subtitle: "WelCome To Shiv-Vibes Web",
+      title: "Music Academy",
+      subtitle: "Welcome To Shiv-Vibes Web",
       thumbnail: "/images/shiv-vibes-vercel-app-1024x768desktop-4a5928.jpg",
       description:
         "Our music academy enriches music education by offering a versatile learning experience. We prepare students to achieve their musical aspirations through interactive dialogues, extensive music collections, and advanced study materials.",
@@ -43,7 +50,7 @@ function Projects1() {
     },
     {
       title: "E-Commerce",
-      subtitle: "WelCome To E-Commerce Web",
+      subtitle: "Welcome To E-Commerce Web",
       thumbnail: "/images/shivs-vercel-app-1024x768desktop-8e9a22.jpg",
       description:
         "Our e-commerce platform offers a diverse range of top-brand products, ensuring a convenient shopping experience with secure transactions and excellent customer service.",
@@ -54,8 +61,8 @@ function Projects1() {
 
   return (
     <div className="App">
-      <main className="p-3">
-        <section className="flex flex-wrap justify-center mt-10">
+      <main className="p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16">
+        <section className="flex flex-wrap justify-center gap-8">
           {projectData.map((project, index) => (
             <Project
               key={index}

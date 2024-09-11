@@ -6,10 +6,10 @@ function Resume() {
 
   return (
     <div className="bg-gray-500 min-h-screen flex flex-col items-center">
-      <div className="pt-10"></div>
-      <div className="mt-10 w-full mb-4 sm:px-4 flex justify-center">
+      <div className="mt-4 w-full mb-4 sm:px-4 flex justify-center">
         <div className="w-full max-w-8xl border-2 border-white">
           <div className="bg-white p-2 sm:p-6">
+            <div className="text-4xl font-bold text-center">Resume</div>
             <div className="flex justify-between items-center">
               <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1>
               <a
