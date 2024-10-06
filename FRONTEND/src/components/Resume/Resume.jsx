@@ -124,6 +124,45 @@ function Resume() {
               for customizable notifications, enhancing user interaction with
               real-time feedback and alerts.
             </p>
+            <p className="mt-2">
+              <strong>
+                <a
+                  href="https://shivs.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline"
+                >
+                  Clothing E-Commerce Website
+                </a>
+                - Frontend Development
+              </strong>
+              <br />
+              <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
+              Tailwind CSS, Vite, ReactJS, Redux, Redux Toolkit
+              <br />
+              <span className="italic font-bold">Frontend:</span> Built using
+              Vite for fast development and optimized builds, ReactJS for a
+              dynamic, component-based architecture, and Tailwind CSS for a
+              responsive, modern design.
+              <br />
+              <span className="italic font-bold">User Interface:</span> Designed
+              an intuitive UI with features like product browsing, filtering,
+              and search functionality to enhance user experience.
+              <br />
+              <span className="italic font-bold">State Management:</span>{" "}
+              Implemented Redux and Redux Toolkit for efficient global state
+              management, ensuring consistent data flow and scalability across
+              the application.
+              <br />
+              <span className="italic font-bold">Responsive Design:</span> Used
+              Tailwind CSS to create a mobile-first, fully responsive design
+              that adapts to various devices.
+              <br />
+              <span className="italic font-bold">Performance:</span> Leveraged
+              Vite’s fast build and hot-reloading for optimized development,
+              along with lazy loading techniques for images and components to
+              enhance performance.
+            </p>
             <h2 className="text-lg font-semibold mt-4">EDUCATION</h2>
             <p className="mt-2">
               University of Technology, Vatika | Bachelor of Computer
