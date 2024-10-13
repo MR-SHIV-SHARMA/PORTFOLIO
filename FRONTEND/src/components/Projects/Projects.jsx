@@ -7,7 +7,7 @@ function Project({ title, thumbnail, description, link, subtitle }) {
   const handleClick = () => {
     setIsClicked(true);
     setTimeout(() => setIsClicked(false), 200);
-  };
+  }; 
 
   return (
     <article

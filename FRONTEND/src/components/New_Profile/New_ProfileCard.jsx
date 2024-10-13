@@ -12,7 +12,7 @@ function ProfileCard() {
           <img
             src="/images/WhatsApp-Image.jpeg"
             alt="Profile Photo"
-            className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64"
+            className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64" 
           />
           <div className="text-center">
             <h2 className="text-3xl font-serif font-bold text-black mb-2">

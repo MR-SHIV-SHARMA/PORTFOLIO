@@ -11,7 +11,7 @@ function Resume() {
           <div className="bg-white p-2 sm:p-6">
             <div className="text-4xl font-bold text-center">Resume</div>
             <div className="flex justify-between items-center">
-              <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1>
+              <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1> 
               <a
                 href={fileUrl}
                 download="CV.pdf"
