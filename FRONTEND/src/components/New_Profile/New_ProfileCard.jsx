@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import projectIcon1 from "../New_Profile/icons8-project-64.png";
 import projectIcon2 from "../New_Profile/icons8-project-48.png";
+import projectIcon3 from "../New_Profile/icons8-project.gif";
 
 function ProfileCard() {
   return (
@@ -75,7 +76,7 @@ function ProfileCard() {
                       alt="Project Icon"
                       className="w-10 h-10"
                     />
-                    <p className="hidden md:block text-sm">Music</p>
+                    <p className="hidden md:block text-sm">Shiv Vibes</p>
                   </Link>
                   <Link
                     to="https://shivs.vercel.app"
@@ -86,7 +87,18 @@ function ProfileCard() {
                       alt="Project Icon"
                       className="w-10 h-10"
                     />
-                    <p className="hidden md:block text-sm">E-commerce</p>
+                    <p className="hidden md:block text-sm">Shiv Wares</p>
+                  </Link>
+                  <Link
+                    to="https://nextgen-thinkers.vercel.app/"
+                    className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"
+                  >
+                    <img
+                      src={projectIcon3}
+                      alt="Project Icon"
+                      className="w-10 h-10"
+                    />
+                    <p className="hidden md:block text-sm">NextGen Thinkers</p>
                   </Link>
                 </div>
               </div>

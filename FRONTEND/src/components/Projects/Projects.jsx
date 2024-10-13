@@ -12,7 +12,7 @@ function Project({ title, thumbnail, description, link, subtitle }) {
   return (
     <article
       className={`border border-gray-300 rounded-lg overflow-hidden shadow-lg w-full transition-transform transform ${
-        isClicked ? "scale-95 shadow-xl" : "hover:scale-105"
+        isClicked ? "scale-95 shadow-xl" : ""
       }`}
       onClick={handleClick}
     >
@@ -57,6 +57,14 @@ function Projects1() {
       description:
         "Our e-commerce platform offers a diverse range of top-brand products, ensuring a convenient shopping experience with secure transactions and excellent customer service.",
       link: "https://shivs.vercel.app/",
+    },
+    {
+      title: "Blogging Services",
+      subtitle: "Welcome to NextGen Thinkers",
+      thumbnail: "/images/Screenshot (150).png",
+      description:
+        "Our blogging platform, NextGen Thinkers, provides insightful articles on various topics, fostering a community of curious minds. We ensure a user-friendly experience, encouraging engagement and discussion among our readers.",
+      link: "https://nextgen-thinkers.vercel.app/",
     },
     // Add more projects as needed
   ];

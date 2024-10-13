@@ -90,6 +90,28 @@ function Resume() {
             <p className="mt-2">
               <strong>
                 <a
+                  href="https://nextgen-thinkers.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline"
+                >
+                  NextGen Thinkers (Blogging)
+                </a>
+                - Frontend and Backend Development
+              </strong>
+              <br />
+              <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
+              Tailwind CSS, ReactJS, NodeJS, Appwrite, React-redux
+              <br />
+              <span className="italic font-bold">Frontend:</span> Next.js for
+              server-side rendering and logic, Tailwind CSS for responsive
+              design, and React Hooks for state management.
+              <br />
+              <span className="italic font-bold">Backend:</span> Appwrite
+            </p>
+            <p className="mt-2">
+              <strong>
+                <a
                   href="https://shiv-vibes.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -101,12 +123,11 @@ function Resume() {
               </strong>
               <br />
               <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
-              Tailwind CSS, ReactJS, NextJS, NodeJS, MongoDB, TypeScript, Redis
+              Tailwind CSS, ReactJS, NextJS, NodeJS, MongoDB, Redis
               <br />
               <span className="italic font-bold">Frontend:</span> Next.js for
-              server-side rendering and logic, TypeScript for type checking,
-              Tailwind CSS for responsive design, and React Hooks for state
-              management.
+              server-side rendering and logic, Tailwind CSS for responsive
+              design, and React Hooks for state management.
               <br />
               <span className="italic font-bold">Backend:</span> Next.js manages
               backend logic and API routes, Axios ensures smooth
