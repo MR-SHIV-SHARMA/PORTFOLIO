@@ -11,7 +11,7 @@ function Resume() {
           <div className="bg-white p-2 sm:p-6">
             <div className="text-4xl font-bold text-center">Resume</div>
             <div className="flex justify-between items-center">
-              <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1> 
+              <h1 className="text-xl font-bold">SHIV PRASAD SHARMA</h1>
               <a
                 href={fileUrl}
                 download="CV.pdf"
@@ -68,21 +68,16 @@ function Resume() {
               </p>
             </div>
             <p className="">shivps7568@gmail.com</p>
-
             <h2 className="text-lg font-semibold mt-4">PROFESSIONAL SUMMARY</h2>
-            <p className="mt-2">
+            <p>
               Full stack developer with frontend and backend expertise, equipped
-              with a strong foundation and eager to contribute as a fresher.
+              with a strong foundation and eager to contribute as a fresher in a
+              dynamic environment.
             </p>
             <h2 className="text-lg font-semibold mt-4">TECHNICAL SKILLS</h2>
             <ul className="list-disc list-inside mt-2">
-              <li>
-                Programming Languages: JavaScript, basic knowledge of TypeScript
-              </li>
-              <li>
-                Frontend: JavaScript, ReactJS, Redux, NextJS, basic knowledge of
-                TypeScript
-              </li>
+              <li>Programming Languages: JavaScript</li>
+              <li>Frontend: JavaScript, ReactJS, Redux, NextJS</li>
               <li>Backend: NodeJS, ExpressJS</li>
               <li>Database: MongoDB, Redis</li>
             </ul>
@@ -101,13 +96,12 @@ function Resume() {
               </strong>
               <br />
               <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
-              Tailwind CSS, ReactJS, NodeJS, Appwrite, React-redux
+              Tailwind CSS, ReactJS, NodeJS, Appwrite
               <br />
-              <span className="italic font-bold">Frontend:</span> Next.js for
-              server-side rendering and logic, Tailwind CSS for responsive
-              design, and React Hooks for state management.
-              <br />
-              <span className="italic font-bold">Backend:</span> Appwrite
+              <span className="italic font-bold">Overview:</span> Developed
+              user-friendly interfaces using React.js and Tailwind CSS for
+              responsive design. Integrated Appwrite for backend services
+              including authentication and database management.
             </p>
             <p className="mt-2">
               <strong>
@@ -119,31 +113,29 @@ function Resume() {
                 >
                   Music Academy Website
                 </a>
-                - Frontend and Backend Development
+                - Full Stack Development
               </strong>
               <br />
               <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
               Tailwind CSS, ReactJS, NextJS, NodeJS, MongoDB, Redis
               <br />
-              <span className="italic font-bold">Frontend:</span> Next.js for
-              server-side rendering and logic, Tailwind CSS for responsive
-              design, and React Hooks for state management.
+              <span className="italic font-bold">Overview:</span> Developed a
+              fully functional music academy website using Next.js for
+              server-side rendering and Tailwind CSS for responsive design.
+              Managed backend logic and API routes, ensuring smooth
+              communication with Axios.
               <br />
-              <span className="italic font-bold">Backend:</span> Next.js manages
-              backend logic and API routes, Axios ensures smooth
-              frontend-backend communication for HTTP requests.
+              <span className="italic font-bold">Database:</span> Utilized
+              MongoDB with Mongoose for structured data handling and Redis for
+              caching and real-time processing.
               <br />
-              <span className="italic font-bold">Database:</span> MongoDB with
-              Mongoose for structured schema and efficient data handling, Redis
-              for caching and real-time data processing.
+              <span className="italic font-bold">Authentication:</span>{" "}
+              Implemented JWT for secure user sessions integrated with Next.js
+              for authentication.
               <br />
-              <span className="italic font-bold">Authentication:</span> JWT for
-              secure user sessions and permissions, integrated with Next.js for
-              authentication and authorization.
-              <br />
-              <span className="italic font-bold">Features:</span> React Toastify
-              for customizable notifications, enhancing user interaction with
-              real-time feedback and alerts.
+              <span className="italic font-bold">User Experience:</span>{" "}
+              Enhanced user interaction with React Toastify for real-time
+              notifications and feedback.
             </p>
             <p className="mt-2">
               <strong>
@@ -159,30 +151,19 @@ function Resume() {
               </strong>
               <br />
               <span className="italic font-bold">Tech Stack:</span> HTML, CSS,
-              Tailwind CSS, Vite, ReactJS, Redux, Redux Toolkit
+              Tailwind CSS, Vite, ReactJS, Redux
               <br />
-              <span className="italic font-bold">Frontend:</span> Built using
-              Vite for fast development and optimized builds, ReactJS for a
-              dynamic, component-based architecture, and Tailwind CSS for a
-              responsive, modern design.
-              <br />
-              <span className="italic font-bold">User Interface:</span> Designed
-              an intuitive UI with features like product browsing, filtering,
-              and search functionality to enhance user experience.
+              <span className="italic font-bold">Overview:</span> Developed a
+              responsive and intuitive UI with features like product browsing
+              and filtering using Vite and Tailwind CSS.
               <br />
               <span className="italic font-bold">State Management:</span>{" "}
-              Implemented Redux and Redux Toolkit for efficient global state
-              management, ensuring consistent data flow and scalability across
-              the application.
+              Utilized Redux for efficient global state management and seamless
+              user experience.
               <br />
-              <span className="italic font-bold">Responsive Design:</span> Used
-              Tailwind CSS to create a mobile-first, fully responsive design
-              that adapts to various devices.
-              <br />
-              <span className="italic font-bold">Performance:</span> Leveraged
-              Vite’s fast build and hot-reloading for optimized development,
-              along with lazy loading techniques for images and components to
-              enhance performance.
+              <span className="italic font-bold">Performance:</span> Optimized
+              build processes and enhanced performance through lazy loading
+              techniques.
             </p>
             <h2 className="text-lg font-semibold mt-4">EDUCATION</h2>
             <p className="mt-2">
@@ -193,10 +174,10 @@ function Resume() {
               ADDITIONAL INFORMATION
             </h2>
             <p className="mt-2">
-              Actively engage in personal projects and coding challenges to
-              expand technical proficiency and problem-solving skills.
-              Enthusiastic learner with a strong interest in exploring emerging
-              technologies and their applications in software development.
+              Passionate about personal projects and coding challenges to
+              improve technical skills and problem-solving abilities. Actively
+              exploring emerging technologies and their applications in full
+              stack development.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ function ProfileCard() {
           <img
             src="/images/WhatsApp-Image.jpeg"
             alt="Profile Photo"
-            className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64" 
+            className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64"
           />
           <div className="text-center">
             <h2 className="text-3xl font-serif font-bold text-black mb-2">
@@ -33,19 +33,35 @@ function ProfileCard() {
                 <div className="grid grid-cols-1 items-center">
                   <span className="col-span-3 text-left font-sans overflow-hidden">
                     <p className="font-sans text-base antialiased font-medium leading-relaxed">
-                      I&apos;m a full-stack web developer and I work remotely
-                      from Bharat. Hello! I&apos;m Shiv Sharma, a full-stack web
-                      developer with a passion for creating dynamic web
-                      applications. As CEO and Co-Founder of my startup, I blend
-                      technical expertise with entrepreneurial spirit. My skills
-                      include JavaScript, React, Node.js, and more. I focus on
-                      writing clean, maintainable code and staying updated with
-                      industry trends. Based in Bharat, I enjoy remote work,
-                      exploring new technologies, contributing to open-source
-                      projects, and collaborating with diverse teams globally.
-                      My goal is to grow as a developer and leader, contributing
-                      to the tech industry and helping others through
-                      technology.
+                      I'm Shiv Sharma, a full-stack web developer based in
+                      Jaipur, Bharat. I have a passion for creating dynamic web
+                      applications. As the CEO and Co-Founder of my startup, I
+                      blend technical expertise with entrepreneurial spirit. My
+                      skills include:
+                      <ul className="flex flex-wrap space-x-4 list-disc list-inside">
+                        <li className="flex items-center">
+                          <span className="mr-1">•</span>
+                          <span>JavaScript</span>
+                        </li>
+                        <li className="flex items-center">
+                          <span className="mr-1">•</span>
+                          <span>React</span>
+                        </li>
+                        <li className="flex items-center">
+                          <span className="mr-1">•</span>
+                          <span>Node.js</span>
+                        </li>
+                        <li className="flex items-center">
+                          <span className="mr-1">•</span>
+                          <span>and more</span>
+                        </li>
+                      </ul>
+                      I focus on writing clean, maintainable code and staying
+                      updated with industry trends. I enjoy remote work,
+                      exploring new technologies, and collaborating with diverse
+                      teams globally. My goal is to grow as a developer and
+                      leader, contributing to the tech industry and helping
+                      others through technology.
                     </p>
                   </span>
                 </div>
