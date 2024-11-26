@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import projectIcon3 from "../New_Profile/icons8-project.gif";
 import projectIcon1 from "../New_Profile/icons8-project-64.png";
 import projectIcon2 from "../New_Profile/icons8-project-48.png";
-import projectIcon3 from "../New_Profile/icons8-project.gif";
 
 function ProfileCard() {
   return (
-    <div className="flex items-center justify-center pt-4">
-      <div className="w-full flex flex-col lg:flex-row">
-        <div className="flex flex-col bg-customBlue items-center justify-center sm:min-h-screen px-10 sm:px-16 pt-10 sm:pt-10 lg:mb-0">
+    <div className="flex items-center justify-center bg-zinc-600 text-white px-2 2xs:px-[5%] lg:px-[9%]">
+      <div className="w-full flex flex-col lg:flex-row pt-20 pb-10">
+        <div className="flex flex-col bg-customBlue items-center justify-center px-10 sm:px-16 pt-10 sm:pt-10 lg:mb-0">
           <img
             src="/images/WhatsApp-Image.jpeg"
             alt="Profile Photo"
             className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64"
           />
           <div className="text-center">
-            <h2 className="text-3xl font-serif font-bold text-black mb-2">
+            <h2 className="text-3xl font-serif font-bold text-white mb-2">
               Shiv Prasad Sharma
             </h2>
-            <p className="text-gray-900">Jaipur, Full Stack Developer</p>
+            <p className="text-white">Jaipur, Full Stack Developer</p>
           </div>
           <hr className="border-t border-white w-28 my-8" />
         </div>
 
-        <div className="bg-white rounded-lg pl-6 sm:pl-24 flex flex-col items-center justify-between">
+        <div className="pl-6 sm:pl-24 flex flex-col items-center justify-between">
           <div className="pt-3 sm:pt-32 relative items-start text-black w-full max-w-4xl">
-            <h3 className="text-4xl font-serif absolute text-gray-800 ml-5 sm:ml-10">
+            <h3 className="text-4xl font-serif absolute text-white ml-5 sm:ml-10">
               My Profile
             </h3>
-            <div className="space-y-1 mt-5 w-full text-black">
-              <div className="bg-customBeige pl-5 sm:pl-10 pt-10 flex flex-col items-start">
-                <div className="grid grid-cols-1 items-center">
+            <div className="space-y-1 mt-5 w-full text-white">
+              <div className="bg-customBeige pl-3 sm:pl-10 pr-2 sm:pr-10 pt-10 flex flex-col items-start">
+                <div className="grid grid-cols-1 items-center pb-4">
                   <span className="col-span-3 text-left font-sans overflow-hidden">
                     <p className="font-sans text-base antialiased font-medium leading-relaxed">
                       I'm Shiv Sharma, a full-stack web developer based in
@@ -65,10 +65,10 @@ function ProfileCard() {
                     </p>
                   </span>
                 </div>
-                <div className="flex justify-start gap-3 my-3 flex-wrap overflow-x-auto no-scrollbar">
+                {/* <div className="flex justify-start gap-3 my-3 flex-wrap overflow-x-auto no-scrollbar">
                   <SocialIcon
                     network="twitter"
-                    url="https://twitter.com/Shiv_Sharma_786"
+                    url="https://twitter.com/Shiv_Sharma_786" 
                   />
                   <SocialIcon
                     network="github"
@@ -116,13 +116,13 @@ function ProfileCard() {
                     />
                     <p className="hidden md:block text-sm">NextGen Thinkers</p>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-          <div className="flex text-gray-900 w-full items-end mt-5 mb-5 sm:mb-10 justify-end">
+          <div className="flex text-white w-full items-end mt-5 mb-5 sm:mb-10 justify-end">
             <span className="text-lg font-semibold px-6 font-serif flex items-center">
-              <hr className="border-t border-black w-28 mr-2" />
+              <hr className="border-t border-white w-28 mr-2" />
               <Link to="https://shiv-vibes.vercel.app">Shiv Vibes</Link>
             </span>
           </div>

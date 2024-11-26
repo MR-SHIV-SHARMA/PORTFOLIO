@@ -4,9 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-         customBeige: '#F9F5EC',
-        customBlue: '#A1A28E',
-      }
+        customBeige: "#D4B87A",
+        customBlue: "#A1A28E",
+      },
+      screens: {
+        xs: "425px",
+        "2xs": "576px",
+      },
     },
   },
   plugins: [],

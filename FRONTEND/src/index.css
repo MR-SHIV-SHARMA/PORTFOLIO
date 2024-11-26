@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transition-transform {
+  transition:
+    transform 0.7s ease-out,
+    opacity 0.7s ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}

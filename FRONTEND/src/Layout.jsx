@@ -1,9 +1,10 @@
-import ProfileCard from "./components/New_Profile/New_ProfileCard.jsx";
-import Resume from "./components/Resume/Resume.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import Header from "./components/header/Header";
 import Home from "./components/home/Home.jsx";
+import Header from "./components/header/Header";
+import Resume from "./components/Resume/Resume.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import ProfileCard from "./components/New_Profile/New_ProfileCard.jsx";
+import Footer from "./components/Footer/Footer.jsx"
 
 function Layout() {
   return (
@@ -25,6 +26,9 @@ function Layout() {
         <section id="contact">
           <Contact />
         </section>
+        {/* <section id="footer">
+          <Footer />
+        </section> */}
       </main>
     </>
   );

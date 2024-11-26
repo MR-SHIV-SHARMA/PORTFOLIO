@@ -42,13 +42,13 @@ function Footer() {
               <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
                 <Link
                   to="https://github.com/mrshivsharma"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   Github
                 </Link>
                 <Link
                   to="https://wa.link/kjykce"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   Whatsapp
                 </Link>
@@ -56,13 +56,13 @@ function Footer() {
               <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
                 <Link
                   to="https://twitter.com/Shiv_Sharma_786"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   Twitter
                 </Link>
                 <Link
                   to="/instagram"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   Facebook
                 </Link>
@@ -70,13 +70,13 @@ function Footer() {
               <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
                 <Link
                   to="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   LinkedIn
                 </Link>
                 <Link
                   to="https://www.instagram.com/mr_shiv_sharma_1/"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                  className="font-bold underline text-lg sm:text-xl hover:text-red-500 transition-colors duration-1000"
                 >
                   Instagram
                 </Link>
@@ -87,12 +87,12 @@ function Footer() {
             <h1 className="text-sm sm:text-base font-bold underline">
               START A CONVERSATION
             </h1>
-            <a
+            <Link
               href="mailto:shivps7568@gmail.com"
-              className="text-lg sm:text-2xl font-bold hover:text-amber-500 transition-colors duration-1000"
+              className="text-lg sm:text-2xl font-bold hover:text-red-500 transition-colors duration-1000"
             >
               hey shivps7568@gmail.com
-            </a>
+            </Link>
           </div>
         </div>
       </div>
