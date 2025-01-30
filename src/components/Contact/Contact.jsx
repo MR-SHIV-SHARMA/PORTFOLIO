@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="p-2 2xs:px-[5%] lg:px-[9%] w-full pt-12 bg-zinc-600 text-white">
+    <div className="p-2 2xs:px-[5%] lg:px-[9%] w-full pt-12 bg-black text-white">
       <div className="sm:flex space-y-16 sm:space-y-0 justify-between items-start py-6 mb-10">
         {/* Left Section */}
         <div className="space-y-2 w-full">

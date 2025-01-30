@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="p-2 2xs:px-[5%] lg:px-[9%] w-full bg-zinc-600 text-white">
-      <div className="border border-zinc-400 my-6" />
+    <div className="p-2 2xs:px-[5%] lg:px-[9%] w-full bg-black text-white">
+      <div className="border border-zinc-600 my-6" />
 
       {/* Footer Section */}
       <div className="flex flex-row justify-between items-center pb-12 ">

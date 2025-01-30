@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function ProfileCard() {
   return (
-    <div className="flex items-center justify-center bg-zinc-600 text-white px-2 2xs:px-[5%] lg:px-[9%]">
+    <div className="flex items-center justify-center bg-black text-white px-2 2xs:px-[5%] lg:px-[9%]">
       <div className="w-full flex flex-col lg:flex-row pt-20 pb-10">
         <div className="flex flex-col bg-customBlue items-center justify-center px-10 sm:px-16 pt-10 sm:pt-10 lg:mb-0">
           <img

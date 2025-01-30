@@ -73,7 +73,7 @@ function Projects() {
 
   return (
     <div className="App">
-      <main className="p-2 2xs:px-[5%] lg:px-[9%] bg-zinc-600">
+      <main className="p-2 2xs:px-[5%] lg:px-[9%] bg-black">
         <div className="relative overflow-hidden w-[30%] sm:w-[10%] h-8 text-white mt-16">
           <div
             className="scrolling-text text-sm sm:text-base font-bold underline whitespace-nowrap cursor-default"
