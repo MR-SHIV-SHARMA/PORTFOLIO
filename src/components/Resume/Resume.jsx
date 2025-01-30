@@ -5,26 +5,28 @@ import { FaWhatsapp } from "react-icons/fa";
 function Resume() {
   const [fileUrl] = useState("/CV.pdf");
   return (
-    <div className="bg-black text-white py-12 px-4 2xs:px-[5%] lg:px-[12%] relative overflow-hidden">
+    <div className="bg-black text-white py-6 px-4 2xs:px-[5%] lg:px-[9%] relative overflow-hidden">
       {/* Animated Border Top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-border" />
-      
+
       {/* Scrolling Text Section */}
-      <div className="relative overflow-hidden mb-16 group">
-        <div className="flex">
-          <div
-            className="scrolling-text flex items-center space-x-8 text-2xl font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
-            onMouseEnter={(e) => (e.currentTarget.style.animationPlayState = "paused")}
-            onMouseLeave={(e) => (e.currentTarget.style.animationPlayState = "running")}
-          >
-            {[...Array(8)].map((_, i) => (
-              <span key={i} className="flex items-center">
-                <span className="animate-pulse">✦</span>
-                <span className="mx-4">STAY IN TOUCH</span>
-                <span className="w-4 h-4 bg-purple-400 rounded-full animate-ping" />
-              </span>
-            ))}
-          </div>
+      <div className="relative w-[25%] sm:w-[15%] overflow-hidden mb-12 py-7 group">
+        <div
+          className="scrolling-text flex items-center space-x-8 text-xl font-semibold uppercase tracking-widest text-white bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 whitespace-nowrap"
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.animationPlayState = "paused")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.animationPlayState = "running")
+          }
+        >
+          {[...Array(30)].map((_, i) => (
+            <span key={i} className="inline-flex items-center">
+              <span className="animate-pulse text-white">✦</span>
+              <span className="mx-2">STAY IN TOUCH</span>
+              <span className="w-4 h-4 bg-purple-400 rounded-full animate-ping" />
+            </span>
+          ))}
         </div>
       </div>
 
@@ -40,7 +42,9 @@ function Resume() {
               <FaWhatsapp className="w-8 h-8 text-green-400 group-hover:scale-110 transition-transform" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold">WhatsApp</h3>
-                <p className="text-gray-400 group-hover:text-green-200">Direct Message</p>
+                <p className="text-gray-400 group-hover:text-green-200">
+                  Direct Message
+                </p>
               </div>
               <div className="text-2xl group-hover:translate-x-3 transition-transform">
                 →
@@ -56,7 +60,9 @@ function Resume() {
               <FiInstagram className="w-8 h-8 text-purple-400 group-hover:scale-110 transition-transform" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold">Instagram</h3>
-                <p className="text-gray-400 group-hover:text-purple-200">Follow Updates</p>
+                <p className="text-gray-400 group-hover:text-purple-200">
+                  Follow Updates
+                </p>
               </div>
               <div className="text-2xl group-hover:translate-x-3 transition-transform">
                 →
@@ -72,7 +78,9 @@ function Resume() {
               <FiTwitter className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold">Twitter</h3>
-                <p className="text-gray-400 group-hover:text-blue-200">Latest Thoughts</p>
+                <p className="text-gray-400 group-hover:text-blue-200">
+                  Latest Thoughts
+                </p>
               </div>
               <div className="text-2xl group-hover:translate-x-3 transition-transform">
                 →
@@ -95,7 +103,9 @@ function Resume() {
                 <div className="absolute inset-0 bg-blue-400 rounded-full opacity-10 blur-xl" />
               </div>
               <h2 className="text-2xl font-bold mb-2">Download Resume</h2>
-              <p className="text-gray-400 mb-6">PDF Format • Updated Recently</p>
+              <p className="text-gray-400 mb-6">
+                PDF Format • Updated Recently
+              </p>
               <div className="px-6 py-2 bg-blue-500/20 rounded-full text-blue-400 group-hover:bg-blue-500/30 transition-colors">
                 Click to Download
               </div>
@@ -112,8 +122,12 @@ function Resume() {
         }
 
         @keyframes scroll-left {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
 
         .animate-border {
@@ -121,8 +135,12 @@ function Resume() {
         }
 
         @keyframes border-flow {
-          0% { background-position: -100% 0; }
-          100% { background-position: 200% 0; }
+          0% {
+            background-position: -100% 0;
+          }
+          100% {
+            background-position: 200% 0;
+          }
         }
 
         .animate-float {
@@ -130,8 +148,13 @@ function Resume() {
         }
 
         @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
         }
       `}</style>
     </div>
