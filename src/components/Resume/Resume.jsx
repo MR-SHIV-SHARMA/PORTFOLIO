@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiDownload, FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -34,8 +35,8 @@ function Resume() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12">
         {/* Social Links with Hover Effects */}
         <div className="grid grid-cols-1 gap-8 w-full max-w-md">
-          <a
-            href="#"
+          <Link
+            to="https://wa.link/kjykce"
             className="group relative p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-black hover:from-green-900/50 hover:to-green-900/20 transition-all duration-300 shadow-xl hover:shadow-green-500/20"
           >
             <div className="flex items-center space-x-6">
@@ -50,10 +51,10 @@ function Resume() {
                 →
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="https://www.instagram.com/mr_shiv_sharma_1/"
             className="group relative p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-black hover:from-purple-900/50 hover:to-purple-900/20 transition-all duration-300 shadow-xl hover:shadow-purple-500/20"
           >
             <div className="flex items-center space-x-6">
@@ -68,10 +69,10 @@ function Resume() {
                 →
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="https://twitter.com/Shiv_Sharma_786"
             className="group relative p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-black hover:from-blue-900/50 hover:to-blue-900/20 transition-all duration-300 shadow-xl hover:shadow-blue-500/20"
           >
             <div className="flex items-center space-x-6">
@@ -86,14 +87,14 @@ function Resume() {
                 →
               </div>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Download Card */}
         <div className="relative w-full max-w-md group">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity" />
-          <a
-            href={fileUrl}
+          <Link
+            to={fileUrl}
             download="CV.pdf"
             className="relative bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
           >
@@ -110,7 +111,7 @@ function Resume() {
                 Click to Download
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
 
