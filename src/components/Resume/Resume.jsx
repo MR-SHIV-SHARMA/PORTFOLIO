@@ -93,9 +93,9 @@ function Resume() {
         {/* Download Card */}
         <div className="relative w-full max-w-md group">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity" />
-          <Link
-            to={fileUrl}
-            download="CV.pdf"
+          <a
+            href={fileUrl}
+            download="Resume.pdf"
             className="relative bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
           >
             <div className="flex flex-col items-center text-center">
@@ -111,7 +111,7 @@ function Resume() {
                 Click to Download
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
 

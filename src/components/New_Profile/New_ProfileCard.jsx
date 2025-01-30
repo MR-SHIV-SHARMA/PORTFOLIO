@@ -1,131 +1,192 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
+import { FiDownloadCloud } from "react-icons/fi";
 
-function ProfileCard() {
+const skills = [
+  { name: "JavaScript", level: 75 },
+  { name: "React", level: 70 },
+  { name: "Node.js", level: 88 },
+  { name: "MongoDB", level: 80 },
+];
+
+const projects = [
+  {
+    name: "Shiv Vibes",
+    url: "https://shiv-vibes.vercel.app",
+    tech: ["Nextjs", "Tailwind", "Node.js", "MongoDB"],
+    color: "from-blue-500 to-blue-700",
+  },
+  {
+    name: "Shiv Wares",
+    url: "https://shivs.vercel.app",
+    tech: ["React", "Javascript", "Tailwind"],
+    color: "from-purple-500 to-purple-700",
+  },
+  {
+    name: "NextGen Thinkers",
+    url: "https://nextgen-thinkers.vercel.app/",
+    tech: ["React", "Javascript"],
+    color: "from-green-500 to-green-700",
+  },
+];
+
+const ProfileCard = () => {
+  const [fileUrl] = useState("/CV.pdf");
+
   return (
-    <div className="flex items-center justify-center bg-black text-white px-2 2xs:px-[5%] lg:px-[9%]">
-      <div className="w-full flex flex-col lg:flex-row pt-20 pb-10">
-        <div className="flex flex-col bg-customBlue items-center justify-center px-10 sm:px-16 pt-10 sm:pt-10 lg:mb-0">
-          <img
-            src="/images/WhatsApp-Image.jpeg"
-            alt="Profile Photo"
-            className="object-cover mb-4 h-[500px] w-96 sm:h-96 sm:w-64"
-          />
-          <div className="text-center">
-            <h2 className="text-3xl font-serif font-bold text-white mb-2">
-              Shiv Prasad Sharma
-            </h2>
-            <p className="text-white">Jaipur, Full Stack Developer</p>
-          </div>
-          <hr className="border-t border-white w-28 my-8" />
-        </div>
+    <div className="min-h-screen flex items-center justify-center bg-black text-white px-4 sm:px-6 lg:px-8 py-12">
+      <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8">
+        {/* Profile Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="w-full lg:w-1/3 flex flex-col items-center bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-gray-700"
+        >
+          <motion.div whileHover={{ scale: 1.05 }} className="relative group">
+            <img
+              src="/images/WhatsApp-Image.jpeg"
+              alt="Shiv Prasad Sharma"
+              className="w-64 h-64 object-cover rounded-full border-4 border-blue-500/80 shadow-xl"
+            />
+            <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-pulse" />
+          </motion.div>
 
-        <div className="pl-6 sm:pl-24 flex flex-col items-center justify-between">
-          <div className="pt-3 sm:pt-32 relative items-start text-black w-full max-w-4xl">
-            <h3 className="text-4xl font-serif absolute text-white ml-5 sm:ml-10">
-              My Profile
+          <h2 className="mt-6 text-4xl font-bold font-serif text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+            Shiv Prasad Sharma
+          </h2>
+          <p className="mt-2 text-gray-300 text-lg">Full Stack Developer</p>
+          <p className="text-gray-400">Jaipur, Bharat</p>
+
+          <div className="flex space-x-4 mt-6">
+            <SocialIcon
+              network="github"
+              url="https://github.com/mrshivsharma"
+              className="hover:scale-125 transition-transform duration-300"
+              bgColor="transparent"
+              fgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+            <SocialIcon
+              network="linkedin"
+              url="https://linkedin.com/in/shiv-prasad-sharma"
+              className="hover:scale-125 transition-transform duration-300"
+              bgColor="transparent"
+              fgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+            <SocialIcon
+              network="twitter"
+              url="https://twitter.com/Shiv_Sharma_786"
+              className="hover:scale-125 transition-transform duration-300"
+              bgColor="transparent"
+              fgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+          </div>
+
+          <motion.div whileHover={{ scale: 1.05 }} className="w-full mt-8">
+            <a
+              href={fileUrl}
+              download="Resume.pdf"
+              className="flex items-center justify-center space-x-2 w-full py-3 bg-blue-600/30 hover:bg-blue-600/50 rounded-xl border border-blue-500/50 transition-all"
+            >
+              <FiDownloadCloud className="text-blue-400" />
+              <span className="text-blue-200">Download Resume</span>
+            </a>
+          </motion.div>
+        </motion.div>
+
+        {/* Content Section */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full lg:w-2/3 bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-gray-700"
+        >
+          <div className="relative">
+            <h3 className="text-5xl font-serif mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+              About Me
             </h3>
-            <div className="space-y-1 mt-5 w-full text-white">
-              <div className="bg-customBeige pl-3 sm:pl-10 pr-2 sm:pr-10 pt-10 flex flex-col items-start">
-                <div className="grid grid-cols-1 items-center pb-4">
-                  <span className="col-span-3 text-left font-sans overflow-hidden">
-                    <p className="font-sans text-base antialiased font-medium leading-relaxed">
-                      I'm Shiv Sharma, a full-stack web developer based in
-                      Jaipur, Bharat. I have a passion for creating dynamic web
-                      applications. As the CEO and Co-Founder of my startup, I
-                      blend technical expertise with entrepreneurial spirit. My
-                      skills include:
-                      <ul className="flex flex-wrap space-x-4 list-disc list-inside">
-                        <li className="flex items-center">
-                          <span className="mr-1">•</span>
-                          <span>JavaScript</span>
-                        </li>
-                        <li className="flex items-center">
-                          <span className="mr-1">•</span>
-                          <span>React</span>
-                        </li>
-                        <li className="flex items-center">
-                          <span className="mr-1">•</span>
-                          <span>Node.js</span>
-                        </li>
-                        <li className="flex items-center">
-                          <span className="mr-1">•</span>
-                          <span>and more</span>
-                        </li>
-                      </ul>
-                      I focus on writing clean, maintainable code and staying
-                      updated with industry trends. I enjoy remote work,
-                      exploring new technologies, and collaborating with diverse
-                      teams globally. My goal is to grow as a developer and
-                      leader, contributing to the tech industry and helping
-                      others through technology.
-                    </p>
-                  </span>
+
+            <div className="space-y-8">
+              <p className="text-lg leading-relaxed text-gray-300">
+                As a passionate full-stack developer and CEO/Co-Founder of a
+                tech startup, I combine technical expertise with entrepreneurial
+                vision to create impactful digital solutions. With 5+ years of
+                experience, I've led teams in delivering 50+ projects with a 98%
+                client satisfaction rate.
+              </p>
+
+              <div className="bg-gray-700/30 p-6 rounded-xl border border-gray-600/30">
+                <h4 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                  Technical Expertise
+                </h4>
+                <div className="grid grid-cols-1 gap-4">
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="space-y-2">
+                      <div className="flex justify-between text-sm text-blue-300">
+                        <span>{skill.name}</span>
+                        <span>{skill.level}%</span>
+                      </div>
+                      <div className="h-3 bg-gray-600 rounded-full overflow-hidden">
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${skill.level}%` }}
+                          transition={{ duration: 1, delay: 0.5 }}
+                          className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                {/* <div className="flex justify-start gap-3 my-3 flex-wrap overflow-x-auto no-scrollbar">
-                  <SocialIcon
-                    network="twitter"
-                    url="https://twitter.com/Shiv_Sharma_786" 
-                  />
-                  <SocialIcon
-                    network="github"
-                    url="https://github.com/mrshivsharma"
-                  />
-                  <SocialIcon
-                    network="instagram"
-                    url="https://www.instagram.com/mr_shiv_sharma_1/"
-                  />
-                  <SocialIcon
-                    network="linkedin"
-                    url="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/"
-                  />
-                  <SocialIcon network="whatsapp" url="https://wa.link/kjykce" />
-                  <Link
-                    to="https://shiv-vibes.vercel.app"
-                    className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"
-                  >
-                    <img
-                      src={projectIcon1}
-                      alt="Project Icon"
-                      className="w-10 h-10"
-                    />
-                    <p className="hidden md:block text-sm">Shiv Vibes</p>
-                  </Link>
-                  <Link
-                    to="https://shivs.vercel.app"
-                    className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"
-                  >
-                    <img
-                      src={projectIcon2}
-                      alt="Project Icon"
-                      className="w-10 h-10"
-                    />
-                    <p className="hidden md:block text-sm">Shiv Wares</p>
-                  </Link>
-                  <Link
-                    to="https://nextgen-thinkers.vercel.app/"
-                    className="block font-sans text-5xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"
-                  >
-                    <img
-                      src={projectIcon3}
-                      alt="Project Icon"
-                      className="w-10 h-10"
-                    />
-                    <p className="hidden md:block text-sm">NextGen Thinkers</p>
-                  </Link>
-                </div> */}
+              </div>
+
+              <div className="space-y-8">
+                <h4 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                  Featured Projects
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {projects.map((project) => (
+                    <motion.div
+                      whileHover={{ y: -5 }}
+                      key={project.name}
+                      className="group relative bg-gray-700/30 rounded-xl p-6 border border-gray-600/30 hover:border-blue-500/50 transition-all"
+                    >
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-20 rounded-xl transition-opacity`}
+                      />
+                      <Link
+                        to={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <h5 className="text-xl font-semibold mb-2">
+                          {project.name}
+                        </h5>
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          {project.tech.map((tech) => (
+                            <span
+                              key={tech}
+                              className="px-3 py-1 text-sm bg-gray-600/30 rounded-full"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex text-white w-full items-end mt-5 mb-5 sm:mb-10 justify-end">
-            <span className="text-lg font-semibold px-6 font-serif flex items-center">
-              <hr className="border-t border-white w-28 mr-2" />
-              <Link to="https://shiv-vibes.vercel.app">Shiv Vibes</Link>
-            </span>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
 export default ProfileCard;
