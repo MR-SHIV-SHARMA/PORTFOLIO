@@ -19,6 +19,7 @@ function Card({ title, thumbnail, description, link }) {
             <img
               src={thumbnail}
               alt={`${title} Thumbnail`}
+              loading="lazy"
               className="w-full h-full duration-1000 transform hover:scale-105"
             />
           </div>

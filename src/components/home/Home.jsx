@@ -8,6 +8,7 @@ export default function Home() {
         <img
           src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg"
           alt="Background"
+          loading="lazy"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>
@@ -49,6 +50,7 @@ export default function Home() {
                     <img
                       src={icons1}
                       alt="Project Icon"
+                      loading="lazy"
                       className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 ml-2 text-white border-2 sm:border-4 rounded-full"
                     />
                   </Link>
