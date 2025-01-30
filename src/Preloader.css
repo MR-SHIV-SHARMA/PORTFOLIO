@@ -1,0 +1,102 @@
+.preloader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.rocket-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.rocket {
+  font-size: 4rem;
+  animation: float 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.flames {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #ff4500;
+  border-radius: 50%;
+  filter: blur(5px);
+  animation: burn 0.1s infinite alternate;
+}
+
+@keyframes burn {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  animation: textGlow 2s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  min-height: 2rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #0080ff);
+  transition: width 0.3s ease;
+}
+
+.loading-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
