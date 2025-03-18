@@ -77,8 +77,12 @@ export default function Header() {
           <button
             onClick={handleMenuToggle}
             className="relative z-30 py-2 px-4 rounded-md font-semibold transition-transform duration-300"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {/* Toggle Hamburger Icon / Close Icon */}
+            <span className="sr-only">
+              {isOpen ? "Close menu" : "Open menu"}
+            </span>
             <div
               className={`w-6 h-0.5 bg-black transition-transform duration-300 origin-center ${
                 isOpen ? "rotate-45 translate-y-1" : "translate-y-0"

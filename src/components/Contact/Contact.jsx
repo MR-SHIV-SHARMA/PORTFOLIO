@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Footer() {
+function Contact() {
   return (
     <div className="p-2 2xs:px-[5%] lg:px-[9%] w-full pt-12 bg-black text-white">
       <div className="sm:flex space-y-16 sm:space-y-0 justify-between items-start py-6 mb-10">
@@ -41,7 +41,7 @@ function Footer() {
             <div className="pb-10 flex justify-between items-center">
               <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
                 <Link
-                  to="https://github.com/mrshivsharma"
+                  to="https://github.com/MR-SHIV-SHARMA"
                   className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
                 >
                   Github
@@ -90,6 +90,7 @@ function Footer() {
             <a
               href="mailto:shivps7568@gmail.com"
               className="text-lg sm:text-2xl font-bold hover:text-amber-500 transition-colors duration-1000"
+              aria-label="Send an email to shivps7568@gmail.com"
             >
               hey shivps7568@gmail.com
             </a>
@@ -119,4 +120,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Contact;
