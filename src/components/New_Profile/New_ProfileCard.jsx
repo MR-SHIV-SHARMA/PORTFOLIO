@@ -71,7 +71,7 @@ const ProfileCard = () => {
           <div className="flex space-x-4 mt-6">
             <SocialIcon
               network="github"
-              url="https://github.com/mrshivsharma"
+              url="https://github.com/MR-SHIV-SHARMA"
               className="hover:scale-110 transition-transform"
               bgColor="transparent"
               fgColor="#fff"
