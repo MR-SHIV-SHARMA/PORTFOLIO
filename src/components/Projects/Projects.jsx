@@ -20,7 +20,7 @@ function Card({ title, thumbnail, description, link }) {
               src={thumbnail}
               alt={`${title} Thumbnail`}
               loading="lazy"
-              className="w-full h-full duration-1000 transform hover:scale-105"
+              className="w-full h-auto object-cover duration-1000 transform hover:scale-105"
             />
           </div>
         </Link>
