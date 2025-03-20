@@ -19,6 +19,7 @@
   font-size: 4rem;
   animation: float 2s ease-in-out infinite;
   transform-origin: center bottom;
+  will-change: transform;
 }
 
 @keyframes float {
@@ -73,9 +74,21 @@
 .loading-message {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  min-height: 2rem;
+  height: 2rem; /* Fix CLS */
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 .progress-bar {
@@ -90,6 +103,7 @@
 .progress {
   height: 100%;
   background: linear-gradient(90deg, #00ffff, #0080ff);
+  will-change: width;
   transition: width 0.3s ease;
 }
 

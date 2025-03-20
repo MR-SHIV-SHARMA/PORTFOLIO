@@ -1,4 +1,3 @@
-import icons1 from "/images/icons1.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function Home() {
@@ -6,10 +5,12 @@ export default function Home() {
     <>
       <div className="relative isolate overflow-hidden h-screen">
         <img
-          src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpg"
+          src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.webp"
           alt="Background"
           loading="lazy"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+          width="1920"
+          height="1080"
         />
         <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex items-center">
@@ -48,9 +49,11 @@ export default function Home() {
                       Start Tour
                     </p>
                     <img
-                      src={icons1}
+                      src="/images/icons1.webp"
                       alt="Project Icon"
                       loading="lazy"
+                      width="48"
+                      height="48"
                       className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 ml-2 text-white border-2 sm:border-4 rounded-full"
                     />
                   </Link>

@@ -1,25 +1,30 @@
 import { useState, useEffect } from "react";
-import "./Preloader.css"; // Create this CSS file
+import "./Preloader.css"; // Make sure this CSS file is present
 
 const Preloader = ({ onFinish }) => {
   const [progress, setProgress] = useState(0);
   const [currentMessage, setCurrentMessage] = useState(0);
-  
+  const [fade, setFade] = useState(true);
+
   const loadingMessages = [
     "Launching the rockets...",
     "Preparing awesomeness...",
     "Fueling creativity...",
     "Almost there...",
-    "Ready for takeoff!"
+    "Ready for takeoff!",
   ];
 
   useEffect(() => {
     const messageInterval = setInterval(() => {
-      setCurrentMessage(prev => (prev + 1) % loadingMessages.length);
+      setFade(false);
+      setTimeout(() => {
+        setCurrentMessage((prev) => (prev + 1) % loadingMessages.length);
+        setFade(true);
+      }, 300);
     }, 600);
 
     const progressInterval = setInterval(() => {
-      setProgress(prev => Math.min(prev + 1, 100));
+      setProgress((prev) => Math.min(prev + 1, 100));
     }, 30);
 
     const timer = setTimeout(() => {
@@ -41,10 +46,10 @@ const Preloader = ({ onFinish }) => {
         <div className="rocket">🚀</div>
         <div className="flames"></div>
       </div>
-      
+
       <h1 className="title">Welcome to the Future</h1>
-      
-      <div className="loading-message">
+
+      <div className={`loading-message ${fade ? "fade-in" : "fade-out"}`}>
         {loadingMessages[currentMessage]}
       </div>
 
