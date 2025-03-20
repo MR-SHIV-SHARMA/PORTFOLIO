@@ -43,32 +43,32 @@ function Projects() {
   const projectData = [
     {
       title: "Music Academy",
-      thumbnail: "/images/pexels-marleneleppanen-17461673.jpg",
+      thumbnail: "/images/pexels-marleneleppanen-17461673.webp",
       description: "A platform for creative and comprehensive music education.",
       link: "https://shiv-vibes.vercel.app",
     },
     {
       title: "E-Commerce",
-      thumbnail: "/images/pexels_voitkevich_6214450.jpg",
+      thumbnail: "/images/pexels_voitkevich_6214450.webp",
       description:
         "Shop top-quality products with secure payments and support.",
       link: "https://shivs.vercel.app/",
     },
     {
       title: "Blogging Services",
-      thumbnail: "/images/pexels_ivan_samkov_4240497.jpg",
+      thumbnail: "/images/pexels_ivan_samkov_4240497.webp",
       description: "Discover insightful blogs and join a vibrant community.",
       link: "https://nextgen-thinkers.vercel.app/",
     },
     {
       title: "Demo Design",
-      thumbnail: "/images/pexels_thgusstavo_2102587.jpg",
+      thumbnail: "/images/pexels_thgusstavo_2102587.webp",
       description: "Explore creative and modern design concepts.",
       link: "https://demo-design-sand.vercel.app/",
     },
     {
       title: "Grocery Design",
-      thumbnail: "/images/pexels_mateodavilah_13566177.jpg",
+      thumbnail: "/images/pexels_mateodavilah_13566177.webp",
       description: "Simplify grocery shopping with a user-friendly platform.",
       link: "https://grocery-web-one.vercel.app/",
     },
