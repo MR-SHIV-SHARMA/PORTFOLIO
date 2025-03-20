@@ -1,10 +1,8 @@
 import "./index.css";
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import Layout from "./Layout.jsx";
-import Preloader from "./Preloader.jsx"; // Import Preloader
-import { RouterProvider } from "react-router-dom";
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/home/Home.jsx";
 
 const router = createBrowserRouter([
@@ -21,13 +19,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [showPreloader, setShowPreloader] = useState(true);
-
-  return showPreloader ? (
-    <Preloader onFinish={() => setShowPreloader(false)} />
-  ) : (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
