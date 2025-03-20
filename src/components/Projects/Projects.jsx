@@ -13,9 +13,9 @@ function Card({ title, thumbnail, description, link }) {
         ease: "easeOut",
       }}
     >
-      <article className="w-full h-[100vh]">
+      <article className="w-full">
         <Link to={link}>
-          <div className="relative overflow-hidden h-[100vh]">
+          <div className="relative overflow-hidden">
             <img
               src={thumbnail}
               alt={`${title} Thumbnail`}
