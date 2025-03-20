@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -39,48 +38,78 @@ function Contact() {
 
             {/* Social Links */}
             <div className="pb-10 flex justify-between items-center">
-              <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
-                <Link
-                  to="https://github.com/MR-SHIV-SHARMA"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  Github
-                </Link>
-                <Link
-                  to="https://wa.link/kjykce"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  Whatsapp
-                </Link>
-              </div>
-              <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
-                <Link
-                  to="https://twitter.com/Shiv_Sharma_786"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  Twitter
-                </Link>
-                <Link
-                  to="/instagram"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  Facebook
-                </Link>
-              </div>
-              <div className="flex flex-col flex-wrap justify-between items-start space-y-4">
-                <Link
-                  to="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  LinkedIn
-                </Link>
-                <Link
-                  to="https://www.instagram.com/mr_shiv_sharma_1/"
-                  className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
-                >
-                  Instagram
-                </Link>
-              </div>
+              <ul className="flex flex-col flex-wrap justify-between items-start space-y-4">
+                <li>
+                  <a
+                    href="https://github.com/MR-SHIV-SHARMA"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit GitHub Profile"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.link/kjykce"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact on WhatsApp"
+                  >
+                    Whatsapp
+                  </a>
+                </li>
+              </ul>
+              <ul className="flex flex-col flex-wrap justify-between items-start space-y-4">
+                <li>
+                  <a
+                    href="https://twitter.com/Shiv_Sharma_786"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow on Twitter"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Facebook"
+                  >
+                    Facebook
+                  </a>
+                </li>
+              </ul>
+              <ul className="flex flex-col flex-wrap justify-between items-start space-y-4">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Connect on LinkedIn"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/mr_shiv_sharma_1/"
+                    className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow on Instagram"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
             </div>
 
             {/* Email Section */}
@@ -90,7 +119,7 @@ function Contact() {
             <a
               href="mailto:shivps7568@gmail.com"
               className="text-lg sm:text-2xl font-bold hover:text-amber-500 transition-colors duration-1000"
-              aria-label="Send an email to shivps7568@gmail.com"
+              aria-label="Send an email to Shiv Prasad Sharma"
             >
               hey shivps7568@gmail.com
             </a>

@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 function Card({ title, thumbnail, description, link }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }} // Start below and invisible
-      whileInView={{ opacity: 1, y: 0 }} // Animate to visible and in position
-      viewport={{ once: true, amount: 0 }} // Trigger animation immediately when visible
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{
-        duration: 1.5, // Smooth and fast transition
-        ease: "easeInOut", // Gradual easing
+        duration: 1.2, // Faster transition
+        ease: "easeOut",
       }}
     >
       <article className="w-full h-[100vh]">
@@ -20,6 +20,8 @@ function Card({ title, thumbnail, description, link }) {
               src={thumbnail}
               alt={`${title} Thumbnail`}
               loading="lazy"
+              width="400" // Fixed width
+              height="250" // Fixed height
               className="w-full h-auto object-cover duration-1000 transform hover:scale-105"
             />
           </div>
