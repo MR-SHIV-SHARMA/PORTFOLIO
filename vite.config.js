@@ -28,11 +28,37 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "https://shivs-io.vercel.app/",
-        // changeOrigin: true,  // Ensure the origin of the host header is changed to the target URL
-        // secure: false,       // Disable SSL verification if needed (not recommended for production)
-        // rewrite: (path) => path.replace(/^\/api/, ''), // Optional: Remove /api prefix if not needed by the backend
+        changeOrigin: true,
+        secure: true,
       },
     },
   },
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom', 'react-router-hash-link'],
+          icons: ['react-icons', 'react-social-icons'],
+          animations: ['framer-motion']
+        }
+      }
+    },
+    target: 'esnext',
+    minify: 'terser',
+    cssMinify: true
+  },
+  optimizeDeps: {
+    include: [
+      'react', 
+      'react-dom', 
+      'react-router-dom', 
+      'react-router-hash-link',
+      'react-icons/fi',
+      'react-icons/fa',
+      'react-social-icons',
+      'framer-motion'
+    ]
+  }
 });

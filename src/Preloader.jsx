@@ -31,7 +31,7 @@ const Preloader = ({ onFinish }) => {
       onFinish();
       clearInterval(messageInterval);
       clearInterval(progressInterval);
-    }, 3000);
+    }, 300);
 
     return () => {
       clearTimeout(timer);

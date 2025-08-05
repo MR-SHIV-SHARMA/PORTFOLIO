@@ -1,16 +1,29 @@
 import { HashLink as Link } from "react-router-hash-link";
+import { useEffect } from "react";
 
 export default function Home() {
+  // Preload critical images
+  useEffect(() => {
+    const preloadImage = (src) => {
+      const img = new Image();
+      img.src = src;
+    };
+
+    preloadImage("/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.webp");
+    preloadImage("/images/icons1.webp");
+  }, []);
+
   return (
     <>
       <div className="relative isolate overflow-hidden h-screen">
         <img
           src="/images/louise-viallesoubranne-5EhN4wbfvBc-unsplash.webp"
           alt="Background"
-          loading="lazy"
+          loading="eager"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
           width="1920"
           height="1080"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex items-center">

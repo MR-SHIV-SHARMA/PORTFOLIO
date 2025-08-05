@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 function Card({ title, thumbnail, description, link }) {
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -19,7 +18,7 @@ function Card({ title, thumbnail, description, link }) {
             <img
               src={thumbnail}
               alt={`${title} Thumbnail`}
-              loading="lazy"
+              loading="eager"
               width="400" // Fixed width
               height="250" // Fixed height
               className="w-full h-auto object-cover duration-1000 transform hover:scale-105"
@@ -35,7 +34,7 @@ function Card({ title, thumbnail, description, link }) {
           {description}
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -97,7 +96,7 @@ function Projects() {
             SELECTED
           </div>
         </div>
-        <motion.section
+        <section
           className="grid grid-cols-1 gap-y-10 2xs:grid-cols-2 2xs:gap-x-[5%] lg:gap-x-[9%] 2xs:gap-y-[2%] mt-[20%] 2xs:mt-[40%] sm:mt-[30%] md:mt-[25%] lg:mt-[20%]"
           initial="hidden"
           animate="visible"
@@ -112,7 +111,7 @@ function Projects() {
           }}
         >
           {projectData.map((project, index) => (
-            <motion.div
+            <div
               key={index}
               variants={{
                 hidden: { opacity: 0, y: 50 },
@@ -130,9 +129,9 @@ function Projects() {
                 description={project.description}
                 link={project.link}
               />
-            </motion.div>
+            </div>
           ))}
-        </motion.section>
+        </section>
       </main>
       <style jsx>{`
         .scrolling-text {

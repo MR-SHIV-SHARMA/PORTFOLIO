@@ -2,38 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
 .transition-transform {
-  transition:
-    transform 0.7s ease-out,
-    opacity 0.7s ease-out;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  will-change: transform, opacity;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Placeholder to prevent layout shift */
+/* Critical resource hints */
+html {
+  font-display: swap;
+}
+
+/* Fast loading placeholder */
 .loading-placeholder {
-  height: 200px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  color: #777;
+  font-size: 1rem;
+  color: #999;
+  background: transparent;
 }
 
-/* Fade-in animation */
+/* Instant fade-in animation */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition:
-    opacity 0.5s ease-in-out,
-    transform 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+  transition: none; /* Remove transition for instant loading */
 }
 
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Quick component load animation */
+.quick-load {
+  animation: quickFadeIn 0.1s ease-out;
+}
+
+@keyframes quickFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smooth image loading without blinking */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  will-change: opacity;
+}
+
+img[loading="eager"], img[loading="lazy"] {
+  opacity: 1;
+}
+
+/* Force image caching and prevent reloading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Prevent layout shift during image loading */
+.image-container {
+  position: relative;
+  background-color: #1f2937;
+  min-height: 200px;
+}
+
+/* Smooth project animations */
+.project-card {
+  transition: transform 0.3s ease;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Force project images to stay visible */
+.project-card img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  position: static !important;
 }
 
 .preloader {
