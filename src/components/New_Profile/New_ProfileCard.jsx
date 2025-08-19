@@ -41,9 +41,9 @@ const ProfileCard = () => {
         >
           <motion.div whileHover={{ scale: 1.05 }} className="relative group">
             <img
-              src="/images/WhatsApp-Image.jpeg"
+              src="/images/20250810_2155_Professional Profile Picture_remix_01k2acm1hye4tsjawn0496qrgc.png"
               alt="Shiv Prasad Sharma"
-              className="w-64 h-64 object-cover rounded-full border-4 border-gray-700 shadow-xl"
+              className="w-64 h-64 object-contain rounded-full border-4 border-gray-700 shadow-xl"
             />
           </motion.div>
 
