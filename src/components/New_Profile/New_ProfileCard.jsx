@@ -90,7 +90,7 @@ const ProfileCard = () => {
           <motion.div whileHover={{ scale: 1.02 }} className="w-full mt-8">
             <a
               href={fileUrl}
-              download="Shiv_Sharma_Resume.pdf"
+              download="Shiv_Prasad_Sharma_Resume.pdf"
               className="flex items-center justify-center space-x-2 w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl border border-gray-700 transition-all text-white"
             >
               <FiDownloadCloud className="text-white" />
