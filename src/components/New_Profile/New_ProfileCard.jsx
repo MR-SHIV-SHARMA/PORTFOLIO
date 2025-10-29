@@ -56,11 +56,29 @@ const ProfileCard = () => {
           </p>
 
           <div className="flex space-x-4 mt-6">
-            {["github", "linkedin", "twitter"].map((network, index) => (
+            {[
+              {
+                network: "github",
+                url: "https://github.com/MR-SHIV-SHARMA",
+              },
+              {
+                network: "linkedin",
+                url: "https://www.linkedin.com/in/shiv-prasad-sharma-490b732a1/",
+              },
+              {
+                network: "twitter",
+                url: "https://x.com/Shiv_Sharma_786",
+              },
+              {
+                network: "facebook",
+                url: "https://www.facebook.com/profile.php?id=100073756635769",
+              },
+            ].map((item, index) => (
               <SocialIcon
                 key={index}
-                network={network}
-                url={`https://${network}.com/shivps`}
+                network={item.network}
+                url={item.url}
+                target="_blank"
                 className="hover:scale-110 transition-transform"
                 bgColor="transparent"
                 fgColor="#fff"

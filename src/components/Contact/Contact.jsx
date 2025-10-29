@@ -76,7 +76,7 @@ function Contact() {
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/profile.php?id=100073756635769"
                     className="font-bold underline text-lg sm:text-xl hover:text-amber-500 transition-colors duration-1000"
                     target="_blank"
                     rel="noopener noreferrer"

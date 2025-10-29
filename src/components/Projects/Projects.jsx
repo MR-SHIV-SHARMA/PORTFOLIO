@@ -13,7 +13,7 @@ function Card({ title, thumbnail, description, link }) {
       }}
     >
       <article className="w-full">
-        <Link to={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <div className="relative overflow-hidden">
             <img
               src={thumbnail}
@@ -24,7 +24,7 @@ function Card({ title, thumbnail, description, link }) {
               className="w-full h-auto object-cover duration-1000 transform hover:scale-105"
             />
           </div>
-        </Link>
+        </a>
       </article>
       <div className="py-3 lg:py-5">
         <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white">
