@@ -32,17 +32,16 @@ export default function Home() {
               Hello!
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
-              I'm Shiv Sharma.
+              I'm Shiv Prasad Sharma.
             </h2>
             <h3 className="mt-2 sm:mt-4 text-base sm:text-lg md:text-xl leading-8 text-white">
               Full-stack Developer.
             </h3>
             <p className="mt-2 sm:mt-4 text-sm sm:text-base md:text-lg leading-6 sm:leading-7 md:leading-8 text-white max-w-2xl">
-              I am a web developer from Jaipur, Chaksu, currently living in my
-              village, Khejdhi Bujurg. I enjoy creating everything from small
-              business websites to rich, interactive web applications. Whether
-              you are a business seeking a web presence or an employer looking
-              to hire, feel free to get in touch with me here.
+              I am a web developer from Jaipur. I enjoy creating everything from
+              small business websites to rich, interactive web applications.
+              Whether you are a business seeking a web presence or an employer
+              looking to hire, feel free to get in touch with me here.
             </p>
             <div className="pt-[10%] flex justify-between items-center">
               <div className="flex flex-col-reverse">
